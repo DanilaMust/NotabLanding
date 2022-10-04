@@ -1,0 +1,89 @@
+.footer {
+  padding-top: 150px;
+  padding-bottom: 142px;
+  margin: 0 auto;
+  background: black;
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+    @media (max-width: 1300px) {
+      max-width: 600px;
+    }
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .footer__left {
+      position: relative;
+      @media (max-width: 650px) {
+        text-align: center;
+        padding-top: 58px;
+      }
+      .footer__title {
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+      }
+      .footer__email {
+        padding-top: 16px;
+        font-family: "Avenir";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+      .footer__year {
+        padding-top: 19px;
+        font-family: "Avenir";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+      .footer-left__background {
+        position: absolute;
+
+        left: -130px;
+        top: -100px;
+
+        background-color: linear-gradient(#f101bf);
+        opacity: 0.3;
+        filter: blur(250px);
+        transform: rotate(5.78deg);
+        // height: 411px;
+        // width: 405px;
+        border-radius: 0px;
+        -webkit-transform: rotate(5.78deg);
+        -moz-transform: rotate(5.78deg);
+        -ms-transform: rotate(5.78deg);
+        -o-transform: rotate(5.78deg);
+      }
+    }
+    .footer__right {
+      font-family: "Avenir";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: right;
+      color: #ffffff;
+      @media (max-width: 650px) {
+        text-align: unset;
+      }
+      .footer__terms {
+      }
+      .footer__privacy {
+        padding-top: 25px;
+      }
+    }
+  }
+}

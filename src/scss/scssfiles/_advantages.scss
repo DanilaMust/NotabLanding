@@ -1,0 +1,99 @@
+.advantages {
+  background: #000000;
+  .advantages__container {
+    padding-top:230px;
+    display: grid;
+    justify-items: center;
+    .advantages__text {
+      display: grid;
+      max-width: 1340px;
+      justify-content: end;
+      .advantages__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 51px;
+        line-height: 62px;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        @media (max-width: 650px) {
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+      .advantages__subtitle {
+        padding-top: 23px;
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        @media (max-width: 650px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .advantages__image {
+      max-width: 1440px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .change-img {
+        width: 868px;
+        height: 1038px;
+        position: relative;
+        perspective: 1000px;
+        &:hover .front-side-img {
+          transform: rotateY(180deg);
+        }
+        &:hover .back-side-img {
+          transform: rotateY(360deg);
+        }
+        .front-side-img,
+        .back-side-img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 1s;
+        }
+        .front-side-img img {
+          max-width: 100%;
+          min-width: 100%;
+          height: auto;
+        }
+        .back-side-img img {
+          max-width: 100%;
+          min-width: 100%;
+          height: auto;
+          transform: scaleX(-1);
+        }
+        .back-side-img {
+          transform: rotateY(180deg);
+        }
+      }
+      @media (max-width: 1300px) {
+        padding-top: 75px;
+        width: 700px;
+        height: 800px;
+      }
+      @media (max-width: 800px) {
+        width: 500px;
+        height: 600px;
+      }
+      @media (max-width: 650px) {
+        width: 350px;
+        height: 450px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
